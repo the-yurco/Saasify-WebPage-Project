@@ -11,17 +11,18 @@
 
 /* FONTS */
 html {
-  background-color: #f5f5f5;
   height: 100%;
+  background-color: #f5f5f5;
 }
 
 /* HEADER-WRAPPER */
 .header__wrapper {
-  background: linear-gradient(108.21deg, #2272FF 0%, #0D03C3 97.89%);
+  position: relative;
   max-width: 1920px;
   height: 1200px;
   border: 1xp solid red;
   border-radius: 0% 10% 64% 35%/0% 0% 15% 30%;
+  background: linear-gradient(108.21deg, #2272FF 0%, #0D03C3 97.89%);
   /* NAVBAR */
   /* TXT-CONTAINER1 */
   /* TEXT-CONTAINER2 */
@@ -32,11 +33,11 @@ html {
 .header__wrapper header {
   position: absolute;
   top: 25px;
+  left: 10%;
+  right: 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  left: 10%;
-  right: 10%;
   height: 40px;
 }
 .header__wrapper header a {
@@ -62,9 +63,9 @@ html {
 .header__wrapper .txt_container1 {
   position: absolute;
   top: 220px;
-  text-align: center;
   left: 13%;
   right: 13%;
+  text-align: center;
 }
 .header__wrapper .txt_container1 h1 {
   line-height: 80px;
@@ -77,9 +78,9 @@ html {
 .header__wrapper .txt_container2 {
   position: absolute;
   top: 470px;
-  text-align: center;
   left: 35%;
   right: 35%;
+  text-align: center;
 }
 .header__wrapper .txt_container2 p {
   line-height: 30px;
@@ -91,9 +92,9 @@ html {
 .header__wrapper .input_container {
   position: absolute;
   top: 570px;
-  height: 65px;
   left: 35%;
   right: 35%;
+  height: 65px;
 }
 .header__wrapper .input_container input {
   width: 100%;
@@ -117,10 +118,10 @@ html {
   border-radius: 50px;
   border: none;
   padding: 17px 30px;
-  background: linear-gradient(106.75deg, #2272FF 0%, #0D03C3 100%);
-  color: white;
   font-size: 18px;
   font-weight: 500;
+  background: linear-gradient(106.75deg, #2272FF 0%, #0D03C3 100%);
+  color: white;
 }
 .header__wrapper .img_container {
   position: absolute;
@@ -143,7 +144,7 @@ html {
   flex-wrap: wrap;
 }
 
-.services_container {
+#product {
   position: absolute;
   top: 1750px;
   left: 15%;
@@ -153,7 +154,7 @@ html {
   grid-template-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-rows: 1fr 3fr;
 }
-.services_container h1 {
+#product h1 {
   grid-area: 1/2/2/5;
   align-self: center;
   justify-self: center;
@@ -161,110 +162,107 @@ html {
   font-size: 45px;
   font-weight: 700;
 }
-.services_container .left_container, .services_container .center_container, .services_container .right_container {
-  background: #FFFFFF;
-  border-radius: 10px;
+#product .left_container, #product .center_container, #product .right_container {
   display: flex;
   flex-direction: column;
-  text-align: center;
   justify-content: center;
-  align-items: center;
+  text-align: center;
+  border-radius: 10px;
   padding: 30px;
   line-height: 30px;
+  background: #FFFFFF;
+  color: rgb(0, 0, 0);
 }
-.services_container .left_container h3, .services_container .center_container h3, .services_container .right_container h3 {
+#product .left_container h3, #product .center_container h3, #product .right_container h3 {
+  margin-bottom: 20px;
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 20px;
-  color: rgb(0, 0, 0);
 }
-.services_container .left_container p, .services_container .center_container p, .services_container .right_container p {
+#product .left_container p, #product .center_container p, #product .right_container p {
+  margin-bottom: 20px;
   font-size: 16px;
   font-weight: 500;
-  margin-bottom: 20px;
-  color: rgb(0, 0, 0);
 }
-.services_container .left_container a, .services_container .center_container a, .services_container .right_container a {
+#product .left_container a, #product .center_container a, #product .right_container a {
+  border-radius: 50px;
+  padding: 10px 20px;
   font-size: 16px;
   font-weight: 600;
   color: #0F0BC7;
-  background-color: white;
-  border-radius: 50px;
-  padding: 10px 20px;
 }
-.services_container .left_container img, .services_container .center_container img, .services_container .right_container img {
+#product .left_container img, #product .center_container img, #product .right_container img {
   margin: 0 0 20px 0;
 }
-.services_container .left_container {
+#product .left_container {
   grid-area: 2/1/3/2;
 }
-.services_container .center_container {
+#product .center_container {
   grid-area: 2/3/3/4;
 }
-.services_container .right_container {
+#product .right_container {
   grid-area: 2/5/3/6;
 }
 
-.col2_container {
+#solution {
   position: absolute;
   top: 2450px;
   width: 100%;
   display: flex;
-  padding: 5% 15%;
   justify-content: space-between;
+  padding: 5% 15%;
   background-color: #F6F5FF;
 }
-.col2_container .left_container {
+#solution .left_container {
   display: flex;
-  flex-direction: column;
-  max-width: 530px;
   align-items: flex-start;
   justify-content: center;
+  flex-direction: column;
+  max-width: 530px;
 }
-.col2_container .left_container h1 {
+#solution .left_container h1 {
   font-size: 50px;
   font-weight: bold;
   margin: 0 0 20px 0;
 }
-.col2_container .left_container p {
+#solution .left_container p {
   font-size: 18px;
   font-weight: 500;
   margin: 0 0 20px 0;
 }
-.col2_container .left_container a button {
+#solution .left_container a button {
   padding: 15px 40px;
   border-radius: 50px;
   border: none;
-  background: linear-gradient(106.75deg, #2272FF 0%, #0D03C3 100%);
-  color: white;
   font-size: 20px;
   font-weight: 700;
+  color: white;
+  background: linear-gradient(106.75deg, #2272FF 0%, #0D03C3 100%);
 }
-.col2_container .photo img {
+#solution .photo img {
   contain: content;
 }
 
-.float_grid_container {
+#customer {
   position: absolute;
   top: 3350px;
   width: 100%;
   padding: 5% 15%;
   background: linear-gradient(106.75deg, #2272FF 0%, #0D03C3 100%);
 }
-.float_grid_container .upper_container {
+#customer .upper_container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 0 5% 0;
 }
-.float_grid_container .upper_container h1 {
+#customer .upper_container h1 {
   width: 820px;
   float: left;
   font-size: 48px;
   font-weight: 700;
   color: white;
 }
-.float_grid_container .upper_container button {
+#customer .upper_container button {
   padding: 20px 35px;
   border-radius: 30px;
   border: none;
@@ -272,22 +270,22 @@ html {
   font-weight: 700;
   color: #0F0BC7;
 }
-.float_grid_container .lower_container {
+#customer .lower_container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.float_grid_container .lower_container .lower_left_container {
+#customer .lower_container .lower_left_container {
   display: flex;
   flex-direction: column;
 }
-.float_grid_container .lower_container .lower_left_container .row {
+#customer .lower_container .lower_left_container .row {
   display: flex;
   margin: 20px 0;
   align-items: center;
   width: 500px;
 }
-.float_grid_container .lower_container .lower_left_container .row h1 {
+#customer .lower_container .lower_left_container .row h1 {
   height: 80px;
   width: 140px;
   background-color: white;
@@ -299,44 +297,44 @@ html {
   font-weight: 700;
   font-size: 36px;
 }
-.float_grid_container .lower_container .lower_left_container .row .same h3 {
+#customer .lower_container .lower_left_container .row .same h3 {
   font-size: 26px;
   font-weight: 700;
   color: white;
   margin: 0 0 5px 0;
 }
-.float_grid_container .lower_container .lower_left_container .row .same p {
+#customer .lower_container .lower_left_container .row .same p {
   font-size: 19px;
   font-weight: 400;
   color: white;
 }
-.float_grid_container .lower_container .lower_right_container img {
+#customer .lower_container .lower_right_container img {
   width: 100%;
 }
 
-.pay_cards_grid_container {
+#pricing {
   position: absolute;
   top: 4320px;
   left: 15%;
   right: 15%;
 }
-.pay_cards_grid_container h1 {
+#pricing h1 {
   text-align: center;
   font-size: 50px;
   font-weight: 700;
 }
-.pay_cards_grid_container .switch {
+#pricing .switch {
   position: relative;
   display: inline-block;
   width: 190px;
   height: 45px;
 }
-.pay_cards_grid_container .switch input {
+#pricing .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
-.pay_cards_grid_container .switch .slider {
+#pricing .switch .slider {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -346,7 +344,7 @@ html {
   background-color: #ccc;
   transition: 0.4s;
 }
-.pay_cards_grid_container .switch .slider::before {
+#pricing .switch .slider::before {
   position: absolute;
   content: "";
   height: 35px;
@@ -356,137 +354,137 @@ html {
   background-color: white;
   transition: 0.4s;
 }
-.pay_cards_grid_container .switch .round {
+#pricing .switch .round {
   border-radius: 34px;
 }
-.pay_cards_grid_container .switch .round::before {
+#pricing .switch .round::before {
   border-radius: 50px;
 }
-.pay_cards_grid_container .switch input:checked + .slider {
+#pricing .switch input:checked + .slider {
   background-color: #2196F3;
 }
-.pay_cards_grid_container .switch input:focus + .slider {
+#pricing .switch input:focus + .slider {
   box-shadow: 0 0 1px #2196F3;
 }
-.pay_cards_grid_container .switch input:checked + .slider:before {
+#pricing .switch input:checked + .slider:before {
   transform: translateX(90px);
 }
-.pay_cards_grid_container .bottom_grid_container {
+#pricing .bottom_grid_container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 640px;
   gap: 20px;
 }
-.pay_cards_grid_container .bottom_grid_container hr {
+#pricing .bottom_grid_container hr {
   margin: 10px 5px 20px 0;
 }
-.pay_cards_grid_container .bottom_grid_container .left_grid_container {
+#pricing .bottom_grid_container .left_grid_container {
   grid-column: 1/2;
   background: #FFFFFF;
 }
-.pay_cards_grid_container .bottom_grid_container .left_grid_container h1 {
+#pricing .bottom_grid_container .left_grid_container h1 {
   color: #0F0BC7;
 }
-.pay_cards_grid_container .bottom_grid_container .left_grid_container h1 span {
+#pricing .bottom_grid_container .left_grid_container h1 span {
   color: #000000;
 }
-.pay_cards_grid_container .bottom_grid_container .left_grid_container button {
+#pricing .bottom_grid_container .left_grid_container button {
   background: linear-gradient(106.75deg, #2272FF 0%, #0D03C3 100%);
   color: #ffffff;
 }
-.pay_cards_grid_container .bottom_grid_container .center_grid_container {
+#pricing .bottom_grid_container .center_grid_container {
   grid-column: 2/3;
   background: linear-gradient(106.75deg, #2272FF 0%, #0D03C3 100%);
   color: white;
 }
-.pay_cards_grid_container .bottom_grid_container .center_grid_container img {
+#pricing .bottom_grid_container .center_grid_container img {
   background-color: white;
   color: white;
 }
-.pay_cards_grid_container .bottom_grid_container .center_grid_container hr {
+#pricing .bottom_grid_container .center_grid_container hr {
   margin: 10px 5px 20px 0;
   color: white;
 }
-.pay_cards_grid_container .bottom_grid_container .center_grid_container button {
+#pricing .bottom_grid_container .center_grid_container button {
   background: white;
   color: #0F0BC7;
 }
-.pay_cards_grid_container .bottom_grid_container .right_grid_container {
+#pricing .bottom_grid_container .right_grid_container {
   grid-column: 3/4;
   background: #FFFFFF;
 }
-.pay_cards_grid_container .bottom_grid_container .right_grid_container h1 {
+#pricing .bottom_grid_container .right_grid_container h1 {
   color: #0F0BC7;
 }
-.pay_cards_grid_container .bottom_grid_container .right_grid_container h1 span {
+#pricing .bottom_grid_container .right_grid_container h1 span {
   color: #000000;
 }
-.pay_cards_grid_container .bottom_grid_container .right_grid_container button {
+#pricing .bottom_grid_container .right_grid_container button {
   background: linear-gradient(106.75deg, #2272FF 0%, #0D03C3 100%);
   color: #ffffff;
 }
-.pay_cards_grid_container .bottom_grid_container .grid_container {
+#pricing .bottom_grid_container .grid_container {
   display: flex;
   flex-direction: column;
   padding: 45px 20px;
   border-radius: 15px;
   max-height: 650px;
 }
-.pay_cards_grid_container .bottom_grid_container .grid_container .top {
+#pricing .bottom_grid_container .grid_container .top {
   line-height: 55px;
 }
-.pay_cards_grid_container .bottom_grid_container .grid_container .top h4 {
+#pricing .bottom_grid_container .grid_container .top h4 {
   font-size: 24px;
   font-weight: 700;
 }
-.pay_cards_grid_container .bottom_grid_container .grid_container .top h1 {
+#pricing .bottom_grid_container .grid_container .top h1 {
   font-size: 56px;
   font-weight: 700;
   text-align: start;
 }
-.pay_cards_grid_container .bottom_grid_container .grid_container .top h1 span {
+#pricing .bottom_grid_container .grid_container .top h1 span {
   font-size: 16px;
   font-weight: 500;
   position: absolute;
   top: 220px;
 }
-.pay_cards_grid_container .bottom_grid_container .grid_container .top p {
+#pricing .bottom_grid_container .grid_container .top p {
   font-size: 16px;
   font-weight: 400;
 }
-.pay_cards_grid_container .bottom_grid_container .grid_container .top i {
+#pricing .bottom_grid_container .grid_container .top i {
   height: 20px;
   width: 20px;
 }
-.pay_cards_grid_container .bottom_grid_container .grid_container .top h6 {
+#pricing .bottom_grid_container .grid_container .top h6 {
   font-size: 14px;
   font-weight: 500;
 }
-.pay_cards_grid_container .bottom_grid_container .grid_container .btnn {
+#pricing .bottom_grid_container .grid_container .btnn {
   justify-self: end;
   align-self: center;
 }
-.pay_cards_grid_container .bottom_grid_container .top {
+#pricing .bottom_grid_container .top {
   display: flex;
   flex-direction: column;
   line-height: 30px;
 }
-.pay_cards_grid_container .bottom_grid_container .top div {
+#pricing .bottom_grid_container .top div {
   display: flex;
   line-height: 15px;
   margin: 10px 0;
 }
-.pay_cards_grid_container .bottom_grid_container .top div i {
+#pricing .bottom_grid_container .top div i {
   margin: 0 5px;
 }
-.pay_cards_grid_container .bottom_grid_container .btnn {
+#pricing .bottom_grid_container .btnn {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: end;
 }
-.pay_cards_grid_container .bottom_grid_container .btnn button {
+#pricing .bottom_grid_container .btnn button {
   width: 205px;
   height: 60px;
   border-radius: 65px;
@@ -495,25 +493,25 @@ html {
   font-weight: 700;
 }
 
-.people_thinking {
+#aboutus {
   position: absolute;
   top: 5380px;
   left: 15%;
   right: 15%;
 }
-.people_thinking h1 {
+#aboutus h1 {
   text-align: center;
   padding: 0 0 45px 0;
   font-size: 50px;
   font-weight: 700;
 }
-.people_thinking .grid_container_people {
+#aboutus .grid_container_people {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 360px;
   gap: 20px;
 }
-.people_thinking .grid_container_people .container_people {
+#aboutus .grid_container_people .container_people {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -521,26 +519,63 @@ html {
   border-radius: 15px;
   background: #FFFFFF;
 }
-.people_thinking .grid_container_people .container_people p {
+#aboutus .grid_container_people .container_people p {
   align-self: center;
   font-size: 18px;
   font-weight: 500;
 }
-.people_thinking .grid_container_people .container_people .footer {
+#aboutus .grid_container_people .container_people .bottom {
   display: flex;
 }
-.people_thinking .grid_container_people .container_people .footer img {
+#aboutus .grid_container_people .container_people .bottom img {
   height: 48px;
   margin: 0 15px 0 0;
 }
-.people_thinking .grid_container_people .container_people .footer .info {
+#aboutus .grid_container_people .container_people .bottom .info {
   margin: 5px 0 0 0;
 }
-.people_thinking .grid_container_people .container_people .footer h3 {
+#aboutus .grid_container_people .container_people .bottom h3 {
   font-size: 16px;
   font-weight: 700;
 }
-.people_thinking .grid_container_people .container_people .footer .town {
+#aboutus .grid_container_people .container_people .bottom .town {
   font-size: 14px;
   font-weight: 400;
+}
+
+#footer {
+  position: absolute;
+  top: 6000px;
+  display: grid;
+  grid-template-rows: 2fr 2fr 1fr;
+  width: 100%;
+  height: 850px;
+  background-color: #040335;
+  color: white;
+}
+#footer .section_1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#footer .section_1 h1 {
+  font-size: 60px;
+  font-weight: 800;
+  margin: 30px 0 30px 0;
+}
+#footer .section_1 button {
+  height: 65px;
+  width: 225px;
+  border-radius: 50px;
+  border: none;
+  margin: 0 0 30px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0F0BC7;
+}
+#footer .section_2 {
+  display: flex;
+  margin: 0 15%;
 }/*# sourceMappingURL=style.css.map */
