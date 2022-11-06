@@ -70,6 +70,16 @@ html{
             }
         }
 
+        .nav-2{
+            li{
+                display: inline-block;
+                margin: 43px;
+
+                font-size: 16px;
+                font-weight: $regular-400;
+            }
+        }
+
         .sgn__btn{
             button{
                 padding: 8px 30px;
@@ -94,6 +104,33 @@ html{
         }
     }
 
+    @media screen and (max-width: 1200px){
+        nav {
+            display: none;
+        }
+        .nav-2{
+            display: block;
+        }
+    }
+
+    @media screen and (min-width: 1200px){
+        nav {
+            display: block;
+        }
+        .nav-2{
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 800px){
+        nav {
+            display: none;
+        }
+        .nav-2{
+            display: none;
+        }
+    }
+
     /* TXT-CONTAINER1 */
     .txt_container1{
         position: absolute;
@@ -114,6 +151,28 @@ html{
         }
     }
 
+    @media screen and (max-width: 1450px){
+        .txt_container1{
+            left: 5%;
+            right: 5%;
+        }
+    }
+
+    @media screen and (max-width: 1200px){
+        .txt_container1{
+            position: absolute;
+            left: 1%;
+            right: 1%;
+            scale: 0.8;
+        }
+    }
+
+    @media screen and (max-width: 1095px){
+        .txt_container1{
+            top: 150px;
+        }
+    }
+
     /* TEXT-CONTAINER2 */
     .txt_container2{
         position: absolute;
@@ -130,6 +189,13 @@ html{
             font-size: 20px;
             font-weight: $medium-500;
             color: white;
+        }
+    }
+
+    @media screen and (max-width: 1300px){
+        .txt_container2{
+            left: 20%;
+            right: 20%;
         }
     }
 
@@ -185,6 +251,21 @@ html{
         }
     }
 
+    @media screen and (max-width: 1350px){
+        .input_container{
+            left: 30%;
+            right: 30%;
+            scale: 0.8;
+        }
+    }
+
+    @media screen and (max-width: 1050px){
+        .input_container{
+            left: 25%;
+            right: 25%;
+        }
+    }
+
     /* IMG-CONTAINER */
     .img_container{
         position: absolute;
@@ -212,6 +293,18 @@ html{
 
         img{
             height: 50px;
+        }
+    }
+
+    @media screen and (max-width: 1650px){
+        .companies_container{
+            top: 1800px;
+        }
+    }
+
+    @media screen and (max-width: 1450px){
+        .companies_container{
+            top: 1700px;
         }
     }
 }
@@ -302,6 +395,13 @@ html{
     .right_container{
         grid-area: 2 / 5 / 3 / 6;
     }
+
+    @media screen and (max-width: 1680px){
+        #product{
+            grid-template-columns: repeat(2, 1fr);
+            right: 15%;
+        }
+    }
 }
 
 #solution{
@@ -316,7 +416,7 @@ html{
 
     background-color: #F6F5FF;
 
-    .left_container{
+    .left_side{
         display: flex;
         align-items: flex-start;
         justify-content: center;

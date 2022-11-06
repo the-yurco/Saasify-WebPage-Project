@@ -56,6 +56,12 @@ html {
   font-size: 16px;
   font-weight: 400;
 }
+.header__wrapper header .nav-2 li {
+  display: inline-block;
+  margin: 43px;
+  font-size: 16px;
+  font-weight: 400;
+}
 .header__wrapper header .sgn__btn button {
   padding: 8px 30px;
   border-radius: 50px;
@@ -72,6 +78,30 @@ html {
 .header__wrapper header .sgn__btn button:active {
   transform: translateY(3px);
 }
+@media screen and (max-width: 1200px) {
+  .header__wrapper nav {
+    display: none;
+  }
+  .header__wrapper .nav-2 {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__wrapper nav {
+    display: block;
+  }
+  .header__wrapper .nav-2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .header__wrapper nav {
+    display: none;
+  }
+  .header__wrapper .nav-2 {
+    display: none;
+  }
+}
 .header__wrapper .txt_container1 {
   position: absolute;
   top: 220px;
@@ -87,6 +117,25 @@ html {
   font-weight: 800;
   color: white;
 }
+@media screen and (max-width: 1450px) {
+  .header__wrapper .txt_container1 {
+    left: 5%;
+    right: 5%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header__wrapper .txt_container1 {
+    position: absolute;
+    left: 1%;
+    right: 1%;
+    scale: 0.8;
+  }
+}
+@media screen and (max-width: 1095px) {
+  .header__wrapper .txt_container1 {
+    top: 150px;
+  }
+}
 .header__wrapper .txt_container2 {
   position: absolute;
   top: 470px;
@@ -100,6 +149,12 @@ html {
   font-size: 20px;
   font-weight: 500;
   color: white;
+}
+@media screen and (max-width: 1300px) {
+  .header__wrapper .txt_container2 {
+    left: 20%;
+    right: 20%;
+  }
 }
 .header__wrapper .input_container {
   position: absolute;
@@ -140,6 +195,19 @@ html {
   transform: scale(0.97);
   cursor: pointer;
 }
+@media screen and (max-width: 1350px) {
+  .header__wrapper .input_container {
+    left: 30%;
+    right: 30%;
+    scale: 0.8;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .header__wrapper .input_container {
+    left: 25%;
+    right: 25%;
+  }
+}
 .header__wrapper .img_container {
   position: absolute;
   top: 800px;
@@ -162,6 +230,16 @@ html {
 }
 .header__wrapper .companies_container img {
   height: 50px;
+}
+@media screen and (max-width: 1650px) {
+  .header__wrapper .companies_container {
+    top: 1800px;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .header__wrapper .companies_container {
+    top: 1700px;
+  }
 }
 
 #product {
@@ -233,6 +311,12 @@ html {
 #product .right_container {
   grid-area: 2/5/3/6;
 }
+@media screen and (max-width: 1680px) {
+  #product #product {
+    grid-template-columns: repeat(2, 1fr);
+    right: 15%;
+  }
+}
 
 #solution {
   position: absolute;
@@ -243,24 +327,24 @@ html {
   padding: 5% 15%;
   background-color: #F6F5FF;
 }
-#solution .left_container {
+#solution .left_side {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   max-width: 530px;
 }
-#solution .left_container h1 {
+#solution .left_side h1 {
   font-size: 50px;
   font-weight: bold;
   margin: 0 0 20px 0;
 }
-#solution .left_container p {
+#solution .left_side p {
   font-size: 18px;
   font-weight: 500;
   margin: 0 0 20px 0;
 }
-#solution .left_container a button {
+#solution .left_side a button {
   padding: 15px 40px;
   border-radius: 50px;
   border: none;
@@ -270,7 +354,7 @@ html {
   background: linear-gradient(106.75deg, #2272FF 0%, #0D03C3 100%);
   transition: ease 0.3s;
 }
-#solution .left_container a button:hover {
+#solution .left_side a button:hover {
   transform: scale(0.97);
   cursor: pointer;
 }
