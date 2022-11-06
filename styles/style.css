@@ -43,6 +43,9 @@ html {
 .header__wrapper header a {
   color: white;
 }
+.header__wrapper header a:hover {
+  cursor: pointer;
+}
 .header__wrapper header .logo {
   font-size: 18px;
   font-weight: 600;
@@ -59,6 +62,15 @@ html {
   border: none;
   font-size: 18px;
   font-weight: 600;
+  transition: ease 0.2s;
+}
+.header__wrapper header .sgn__btn button:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  background-color: white;
+}
+.header__wrapper header .sgn__btn button:active {
+  transform: translateY(3px);
 }
 .header__wrapper .txt_container1 {
   position: absolute;
@@ -122,6 +134,11 @@ html {
   font-weight: 500;
   background: linear-gradient(106.75deg, #2272FF 0%, #0D03C3 100%);
   color: white;
+  transition: ease 0.3s;
+}
+.header__wrapper .input_container button:hover {
+  transform: scale(0.97);
+  cursor: pointer;
 }
 .header__wrapper .img_container {
   position: absolute;
@@ -175,6 +192,11 @@ html {
   line-height: 30px;
   background: #FFFFFF;
   color: rgb(0, 0, 0);
+  transition: linear 0.2s;
+}
+#product .left_container:hover, #product .center_container:hover, #product .right_container:hover {
+  cursor: pointer;
+  transform: scale(1.03);
 }
 #product .left_container h3, #product .center_container h3, #product .right_container h3 {
   margin-bottom: 20px;
@@ -187,11 +209,17 @@ html {
   font-weight: 500;
 }
 #product .left_container a, #product .center_container a, #product .right_container a {
-  border-radius: 50px;
   padding: 10px 20px;
+  margin: 0 120px;
+  border-radius: 50px;
+  transition: ease 0.7s;
   font-size: 16px;
   font-weight: 600;
   color: #0F0BC7;
+}
+#product .left_container a:hover, #product .center_container a:hover, #product .right_container a:hover {
+  background: linear-gradient(106.75deg, #2272FF 0%, #0D03C3 100%);
+  color: white;
 }
 #product .left_container img, #product .center_container img, #product .right_container img {
   margin: 0 0 20px 0;
@@ -240,6 +268,11 @@ html {
   font-weight: 700;
   color: white;
   background: linear-gradient(106.75deg, #2272FF 0%, #0D03C3 100%);
+  transition: ease 0.3s;
+}
+#solution .left_container a button:hover {
+  transform: scale(0.97);
+  cursor: pointer;
 }
 #solution .photo img {
   contain: content;
@@ -272,6 +305,12 @@ html {
   font-size: 20px;
   font-weight: 700;
   color: #0F0BC7;
+  transition: ease 0.3s;
+}
+#customer .upper_container button:hover {
+  background-color: white;
+  transform: scale(0.97);
+  cursor: pointer;
 }
 #customer .lower_container {
   display: flex;
@@ -327,13 +366,8 @@ html {
   font-weight: 700;
   margin: 0 0 150px 0;
 }
-#pricing span {
-  margin: 100px 0 0 0;
-}
 #pricing .switch {
   position: relative;
-  width: 200px;
-  height: 50px;
   border-radius: 25px;
   left: 40%;
   top: -80px;
@@ -346,6 +380,9 @@ html {
   height: 50px;
   border-radius: 25px;
   outline: none;
+}
+#pricing .switch input:hover {
+  cursor: pointer;
 }
 #pricing .switch input::before, #pricing .switch input::after {
   z-index: 2;
@@ -419,49 +456,12 @@ html {
 }
 #pricing .bottom_grid_container .left_grid_container {
   grid-column: 1/2;
-  background: #FFFFFF;
-}
-#pricing .bottom_grid_container .left_grid_container h1 {
-  color: #0F0BC7;
-}
-#pricing .bottom_grid_container .left_grid_container h1 span {
-  margin: 100px 0 0 -50px;
-  color: #000000;
-}
-#pricing .bottom_grid_container .left_grid_container button {
-  background: linear-gradient(106.75deg, #2272FF 0%, #0D03C3 100%);
-  color: #ffffff;
 }
 #pricing .bottom_grid_container .center_grid_container {
   grid-column: 2/3;
-  background: linear-gradient(106.75deg, #2272FF 0%, #0D03C3 100%);
-  color: white;
-}
-#pricing .bottom_grid_container .center_grid_container img {
-  background-color: white;
-  color: white;
-}
-#pricing .bottom_grid_container .center_grid_container hr {
-  margin: 10px 5px 20px 0;
-  color: white;
-}
-#pricing .bottom_grid_container .center_grid_container button {
-  background: white;
-  color: #0F0BC7;
 }
 #pricing .bottom_grid_container .right_grid_container {
   grid-column: 3/4;
-  background: #FFFFFF;
-}
-#pricing .bottom_grid_container .right_grid_container h1 {
-  color: #0F0BC7;
-}
-#pricing .bottom_grid_container .right_grid_container h1 span {
-  color: #000000;
-}
-#pricing .bottom_grid_container .right_grid_container button {
-  background: linear-gradient(106.75deg, #2272FF 0%, #0D03C3 100%);
-  color: #ffffff;
 }
 #pricing .bottom_grid_container .grid_container {
   display: flex;
@@ -469,8 +469,12 @@ html {
   padding: 45px 20px;
   border-radius: 15px;
   max-height: 650px;
+  background: #FFFFFF;
 }
 #pricing .bottom_grid_container .grid_container .top {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
   line-height: 55px;
 }
 #pricing .bottom_grid_container .grid_container .top h4 {
@@ -481,18 +485,26 @@ html {
   font-size: 56px;
   font-weight: 700;
   text-align: start;
+  color: #0F0BC7;
 }
 #pricing .bottom_grid_container .grid_container .top h1 span {
   font-size: 16px;
   font-weight: 500;
   position: absolute;
-  top: 220px;
+  top: 385px;
+  color: #000000;
 }
 #pricing .bottom_grid_container .grid_container .top p {
   font-size: 16px;
   font-weight: 400;
 }
-#pricing .bottom_grid_container .grid_container .top i {
+#pricing .bottom_grid_container .grid_container .top div {
+  display: flex;
+  line-height: 15px;
+  margin: 10px 0;
+}
+#pricing .bottom_grid_container .grid_container .top div i {
+  margin: 0 5px;
   height: 20px;
   width: 20px;
 }
@@ -503,34 +515,40 @@ html {
 #pricing .bottom_grid_container .grid_container .btnn {
   justify-self: end;
   align-self: center;
-}
-#pricing .bottom_grid_container .top {
-  display: flex;
-  flex-direction: column;
-  line-height: 30px;
-}
-#pricing .bottom_grid_container .top div {
-  display: flex;
-  line-height: 15px;
-  margin: 10px 0;
-}
-#pricing .bottom_grid_container .top div i {
-  margin: 0 5px;
-}
-#pricing .bottom_grid_container .btnn {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: end;
 }
-#pricing .bottom_grid_container .btnn button {
+#pricing .bottom_grid_container .grid_container .btnn button {
   width: 205px;
   height: 60px;
   border-radius: 65px;
   border: none;
   font-size: 18px;
   font-weight: 700;
+  background: linear-gradient(106.75deg, #2272FF 0%, #0D03C3 100%);
+  color: #ffffff;
+  transition: ease 0.3s;
+}
+#pricing .bottom_grid_container .grid_container .btnn button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+#pricing .bottom_grid_container .center_grid_container {
+  background: linear-gradient(106.75deg, #2272FF 0%, #0D03C3 100%);
+  color: white;
+}
+#pricing .bottom_grid_container .center_grid_container .top h1 {
+  color: white;
+}
+#pricing .bottom_grid_container .center_grid_container .top h1 span {
+  color: white;
+}
+#pricing .bottom_grid_container .center_grid_container .btnn button {
+  background: white;
+  color: #0D03C3;
 }
 
 #aboutus {
@@ -616,6 +634,11 @@ html {
   font-size: 20px;
   font-weight: 700;
   color: #0F0BC7;
+  transition: ease 0.3s;
+}
+#footer .section_1 button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 #footer .section_2 {
   display: flex;
