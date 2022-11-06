@@ -91,7 +91,7 @@ html {
 }
 .header__wrapper .input_container {
   position: absolute;
-  top: 570px;
+  top: 615px;
   left: 35%;
   right: 35%;
   height: 65px;
@@ -126,8 +126,8 @@ html {
 .header__wrapper .img_container {
   position: absolute;
   top: 800px;
-  left: 20%;
-  right: 20%;
+  left: 10%;
+  right: 10%;
 }
 .header__wrapper .img_container img {
   width: 100%;
@@ -136,17 +136,20 @@ html {
 }
 .header__wrapper .companies_container {
   position: absolute;
-  top: 1580px;
-  left: 20%;
-  right: 20%;
+  top: 1900px;
+  left: 10%;
+  right: 10%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.header__wrapper .companies_container img {
+  height: 50px;
+}
 
 #product {
   position: absolute;
-  top: 1750px;
+  top: 2100px;
   left: 15%;
   right: 15%;
   height: 550px;
@@ -205,7 +208,7 @@ html {
 
 #solution {
   position: absolute;
-  top: 2450px;
+  top: 2850px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -244,7 +247,7 @@ html {
 
 #customer {
   position: absolute;
-  top: 3350px;
+  top: 3750px;
   width: 100%;
   padding: 5% 15%;
   background: linear-gradient(106.75deg, #2272FF 0%, #0D03C3 100%);
@@ -314,60 +317,96 @@ html {
 
 #pricing {
   position: absolute;
-  top: 4320px;
+  top: 4650px;
   left: 15%;
   right: 15%;
 }
-#pricing h1 {
+#pricing .top_grid_container h1 {
   text-align: center;
   font-size: 50px;
   font-weight: 700;
+  margin: 0 0 150px 0;
+}
+#pricing span {
+  margin: 100px 0 0 0;
 }
 #pricing .switch {
   position: relative;
-  display: inline-block;
-  width: 190px;
-  height: 45px;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  left: 40%;
+  top: -80px;
 }
 #pricing .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  outline: none;
 }
-#pricing .switch .slider {
+#pricing .switch input::before, #pricing .switch input::after {
+  z-index: 2;
   position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: 0.4s;
+  top: -9px;
+  transform: translateY(-50%);
 }
-#pricing .switch .slider::before {
+#pricing .switch input::before {
+  content: "Monthly";
+  left: 20px;
+}
+#pricing .switch input::after {
+  content: "Annualy";
+  right: 20px;
+}
+#pricing .switch input:checked {
+  background-color: rgb(229, 229, 229);
+}
+#pricing .switch label {
+  z-index: 1;
   position: absolute;
-  content: "";
-  height: 35px;
-  width: 90px;
+  top: -30px;
+  bottom: 9px;
   left: 5px;
-  bottom: 5px;
-  background-color: white;
-  transition: 0.4s;
-}
-#pricing .switch .round {
-  border-radius: 34px;
-}
-#pricing .switch .round::before {
   border-radius: 50px;
 }
-#pricing .switch input:checked + .slider {
-  background-color: #2196F3;
+#pricing .switch input {
+  transition: 0.25s;
 }
-#pricing .switch input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+#pricing .switch input:checked::after, #pricing .switch input:checked::before {
+  color: rgb(255, 255, 255);
+  transition: color 0.5s;
 }
-#pricing .switch input:checked + .slider:before {
-  transform: translateX(90px);
+#pricing .switch input:checked + label {
+  left: 10px;
+  right: 100px;
+  transition: left 0.5s, right 0.4s 0.2s;
+}
+#pricing .switch input:checked + label {
+  left: 10px;
+  right: 100px;
+  background: linear-gradient(106.75deg, #2272FF 0%, #0D03C3 100%);
+  transform: left 0.5s, right 0.4s 0.2s;
+}
+#pricing .switch input:not(:checked) {
+  background-color: rgb(229, 229, 229);
+  transition: background 0.4s;
+}
+#pricing .switch input:not(:checked)::before {
+  color: rgb(0, 0, 0);
+  transition: color 0.5s;
+}
+#pricing .switch input:not(:checked)::after {
+  color: rgb(255, 255, 255);
+  transition: color 0.5s 0.2s;
+}
+#pricing .switch input:not(:checked) + label {
+  left: 100px;
+  right: 10px;
+  background: linear-gradient(106.75deg, #2272FF 0%, #0D03C3 100%);
+  transition: left 0.4s 0.2s, right 0.5s, background 0.35s;
 }
 #pricing .bottom_grid_container {
   display: grid;
@@ -386,6 +425,7 @@ html {
   color: #0F0BC7;
 }
 #pricing .bottom_grid_container .left_grid_container h1 span {
+  margin: 100px 0 0 -50px;
   color: #000000;
 }
 #pricing .bottom_grid_container .left_grid_container button {
@@ -495,7 +535,7 @@ html {
 
 #aboutus {
   position: absolute;
-  top: 5380px;
+  top: 5750px;
   left: 15%;
   right: 15%;
 }
@@ -545,9 +585,9 @@ html {
 
 #footer {
   position: absolute;
-  top: 6000px;
+  top: 6500px;
   display: grid;
-  grid-template-rows: 2fr 2fr 1fr;
+  grid-template-rows: 3fr 3fr 1fr;
   width: 100%;
   height: 850px;
   background-color: #040335;
@@ -558,7 +598,9 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  grid-row: 1/2;
   text-align: center;
+  border-bottom: 1px solid #222242;
 }
 #footer .section_1 h1 {
   font-size: 60px;
@@ -577,5 +619,54 @@ html {
 }
 #footer .section_2 {
   display: flex;
-  margin: 0 15%;
+  justify-content: space-between;
+  padding: 40px 0;
+  grid-row: 2/3;
+  border-bottom: 0.5px solid #222242;
+}
+#footer .section_2 .section_left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  margin: 0 0 0 10%;
+}
+#footer .section_2 .section_left h3 {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+#footer .section_2 .section_left p {
+  font-size: 18px;
+  font-weight: 400;
+}
+#footer .section_2 .section_right {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10% 0 0;
+}
+#footer .section_2 .section_right .col_1 {
+  display: flex;
+  flex-direction: column;
+  line-height: 45px;
+  margin: 0 0 0 100px;
+}
+#footer .section_2 .section_right .col_1 h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+#footer .section_2 .section_right .col_1 a {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+#footer .section_3 {
+  grid-row: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer .section_3 p {
+  font-size: 16px;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
