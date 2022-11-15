@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 /* reset settings */
 * {
   margin: 0;
@@ -457,9 +461,7 @@ html {
   top: -80px;
 }
 #pricing .switch input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   width: 200px;
   height: 50px;
   border-radius: 25px;
