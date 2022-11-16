@@ -355,7 +355,7 @@ html {
   font-size: 20px;
   font-weight: 700;
   color: white;
-  background: linear-gradient(106.75deg, #2272FF 0%, #0D03C3 100%);
+  background: linear-gradient(105deg, #2272FF 0%, #0D03C3 100%);
   transition: ease 0.3s;
 }
 #solution .left_side a button:hover {
@@ -528,7 +528,7 @@ html {
 #pricing .switch input:not(:checked) + label {
   left: 100px;
   right: 10px;
-  background: linear-gradient(106.75deg, #2272FF 0%, #0D03C3 100%);
+  background: linear-gradient(105deg, #2272FF 0%, #0D03C3 100%);
   transition: left 0.4s 0.2s, right 0.5s, background 0.35s;
 }
 #pricing .bottom_grid_container {
@@ -614,7 +614,7 @@ html {
   border: none;
   font-size: 18px;
   font-weight: 700;
-  background: linear-gradient(106.75deg, #2272FF 0%, #0D03C3 100%);
+  background: linear-gradient(105deg, #2272FF 0%, #0D03C3 100%);
   color: #ffffff;
   transition: ease 0.3s;
 }
@@ -623,7 +623,7 @@ html {
   cursor: pointer;
 }
 #pricing .bottom_grid_container .center_grid_container {
-  background: linear-gradient(106.75deg, #2272FF 0%, #0D03C3 100%);
+  background: linear-gradient(105deg, #2272FF 0%, #0D03C3 100%);
   color: white;
 }
 #pricing .bottom_grid_container .center_grid_container .top h1 {
@@ -679,12 +679,10 @@ html {
   margin: 5px 0 0 0;
 }
 #aboutus .grid_container_people .container_people .bottom h3 {
-  font-size: 16px;
   font-weight: 700;
 }
 #aboutus .grid_container_people .container_people .bottom .town {
   font-size: 14px;
-  font-weight: 400;
 }
 
 #footer {
@@ -747,7 +745,6 @@ html {
 }
 #footer .section_2 .section_left p {
   font-size: 18px;
-  font-weight: 400;
 }
 #footer .section_2 .section_right {
   display: flex;
@@ -765,8 +762,6 @@ html {
   font-weight: 600;
 }
 #footer .section_2 .section_right .col_1 a {
-  font-size: 16px;
-  font-weight: 400;
   color: white;
 }
 #footer .section_3 {
@@ -776,6 +771,5 @@ html {
   align-items: center;
 }
 #footer .section_3 p {
-  font-size: 16px;
   font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
